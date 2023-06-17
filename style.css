@@ -4,6 +4,8 @@
 body {
     padding: 20px;
     margin: 0px;
+    padding-bottom: 0px;
+    overflow-x:hidden;
 }
 h1,
 h2,
@@ -116,6 +118,7 @@ header {
     margin-top: 20px;
     min-height: 550px;
 }
+
 .title-block {
     font-family: 'Playfair Display';
     font-size: 26px;
@@ -224,25 +227,30 @@ header {
 }
 /* 56416 */
 .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    width: 100%;
+    columns: 2;
+    column-gap: 10px;
+    margin: 0px auto;
+    margin-top: 15px;
 }
 .gallery-element {
-    align-self: flex-start;
+    width: 100%;
+    margin-bottom: 5px;
 }
 .gallery-photo {
-    display: block;
+    width: 100%;
+    object-fit: contain;
 }
 
                             /* AGENT */
 
 .container-agent {
+    width: 100vw;
     background: #0E204E;
     min-height: 0px;
     padding: 40px;
     margin-top: 40px;
+    margin-left: -20px;
 }
 .btn-agent {
     min-width: 103px;
@@ -296,7 +304,9 @@ input:nth-last-child(2) {
 
 /* foter */
 footer {
+    width: 100vw;
     margin-top: 50px;
+    margin-left: -20px;
     padding: 20px;
     background: #0E204E;
 }
@@ -315,7 +325,6 @@ footer {
     color: #FFFFFF;
 }
 .discription-footer::before {
-    width: 24px;
-    height: 24px;
-    background: url(assets/copyright.svg) center / 100% no-repeat;
+    content: "©";
+    margin-right: 2px;
 }
