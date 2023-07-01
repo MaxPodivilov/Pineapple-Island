@@ -171,11 +171,15 @@ header {
     color: #0E204E;
 }
 .discription-about {
+    display: none;
     font-family: 'Lato';
     font-size: 16px;
     line-height: 160%;
     text-align: center;
     color: #FFFFFF;
+}
+.discription-about.active {
+    display: block;
 }
 .carusel {
     display: flex;
