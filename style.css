@@ -7,6 +7,9 @@ body {
     padding-bottom: 0px;
     overflow-x:hidden;
 }
+body.active {
+    overflow-y: hidden;
+}
 h1,
 h2,
 h3,
@@ -104,7 +107,6 @@ header {
     text-align: center;
     font-size: 24px;
     padding-top: 50px;
-    overflow-y: hidden;
   }
   
   .nav.active {
@@ -113,7 +115,8 @@ header {
   
   .nav .nav__list_item {
     list-style-type: none;
-  }
+    padding: 5px;
+}
 
   /* 123 */
 
