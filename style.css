@@ -153,6 +153,11 @@ header {
     margin-top: 30px;
     cursor: pointer;
 }
+.btn:hover {
+    background: #a8a0a0;
+    color: #FFFFFF;
+    border: 2px;
+}
 /* 2141 */
 
 .wraper {
@@ -324,7 +329,11 @@ input:nth-last-child(2) {
     color: #FFFFFF;
     align-self: center;
 }
-
+.btn-feedback:hover {
+    background: #FFFFFF;
+    color: #0E204E;
+    border: #0E204E 2px solid;
+}
 /* foter */
 footer {
     width: 100vw;
