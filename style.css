@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+}
 body {
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     margin: 0px;
     padding-bottom: 0px;
     overflow-x:hidden;
@@ -123,11 +126,12 @@ header {
 
 .container {
     position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(assets/main-mobile.png) center / 100% no-repeat;
+    background: url(assets/main-mobile.png) center / cover no-repeat;
     margin-top: 20px;
     min-height: 550px;
 }
@@ -192,16 +196,16 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    background: url(assets/streat-mobile.png) center/100% no-repeat;
+    background: url(assets/streat-mobile.png) center/cover no-repeat;
     min-height: 392px;
 }
 .carousel::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 15px;
+    bottom: 0px;
     background: rgba(0, 0, 0, 0.44);
 }
 .carousel-left {
@@ -210,6 +214,7 @@ header {
     border: 0px;
     cursor: pointer;
     margin: 5px;
+    z-index: 2;
 }
 .carousel-right {
     padding: 15px;
@@ -217,9 +222,11 @@ header {
     border: 0px;
     cursor: pointer;
     margin: 5px;
+    z-index: 2;
 }
 .discription-about {
     display: none;
+    padding: 20px 0px 20px 0px;
     font-family: 'Lato';
     font-size: 16px;
     line-height: 160%;
@@ -228,7 +235,7 @@ header {
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 0.5s, transform 0.5s;
-    z-index: 3;
+    z-index: 2;
 }
 .discription-about.active {
     display: block;
@@ -237,6 +244,7 @@ header {
 }
 /* 123 */
 .discription {
+    width: 100%;
     font-family: 'Lato';
     font-size: 16px;
     line-height: 160%;
@@ -247,6 +255,7 @@ header {
 .chose-photo {
     margin-top: 10px;
     width: 100%;
+    height: 100%;
 }
 .offers-photo {
     width: 100%;
@@ -311,22 +320,26 @@ header {
                             /* Feedback */
 
 .feedback {
+    width: 100%;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
 }
+.form-group {
+    padding:5px 30px 5px 30px;
+}
 input {
-    width:85vw;
+    width:100%;
     padding:5px 0px 5px 0px;
-    margin-top: 24px;
+    margin-top: 20px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     font-family: 'Lato';
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0,);
 }
 input.Message {
     border: 1px solid rgba(0, 0, 0, 0.35);
@@ -337,10 +350,11 @@ input:focus {
 }
 .form-group {
     position: relative;
-    margin-bottom: 10px;
+    
 } 
 label {
     position: absolute;
+    padding:5px 30px 5px 30px;
     top: 30px;
     left: 0;
     transition: all 0.3s ease;
@@ -354,13 +368,23 @@ input:valid ~ label {
     font-size: 14px;
     color: rgb(5, 5, 5);
 }
-.message {
-    margin-top: 24px;
-    font-family: 'Lato';
+.massage-area {
+    margin: 35px 30px 0px 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+label.massage {
+    position: relative;
+    padding: 0px;
+    top: -10px;
+    left: 0px;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: rgba(0, 0, 0, 0.6);
+}
+textarea {
+    width: 100%;
+    resize: none;
+    color: rgba(0, 0, 0,);
 }
 .btn-feedback {
     width: 82px;
@@ -390,8 +414,7 @@ input:valid ~ label {
     box-shadow: 0 2px 5px rgba(10, 221, 80, 0.3);
     z-index: 9999;
   }
-  
-  .popup p {
+.popup p {
     font-size: 18px;
     text-align: center;
     margin: 0;
@@ -410,6 +433,7 @@ footer {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    text-align: center;
 }
 .discription-footer{
     font-family: 'Lato';

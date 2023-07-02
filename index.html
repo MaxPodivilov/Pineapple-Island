@@ -136,7 +136,7 @@
     <div class="wraper">
         <h3 class="title">Stay In Touch</h3>
         <p class="discription">If you are interested in finding out more about The Discovery Village, leave a message</p>
-        <form class="feedback">
+        <form class="feedback" onsubmit="return validateForm(event)">
             <div class="form-group">
                 <input type="text" id="Name" class="field" required>
                 <label for="Name">Name</label>
@@ -149,15 +149,15 @@
                 <input type="text" id="Email" class="field" required>
                 <label for="Email">Email</label>
             </div>
-            <div class="form-group">
-                <input type="text" id="Message"  class="Message" required>
-                <label for="Message">Message</label>
-            </div>  
-            <button class="btn btn-feedback" id="openPopupButton">Send</button>
+            <div class="massage-area">
+                <label for="story" class="massage">Massage</label>
+                <textarea id="story" name="story" rows="5" cols="40"></textarea>
+            </div>
+            <button class="btn btn-feedback" id="openPopupButton" type="submit">Send</button>
             <div id="popup" class="popup">
                 <p>Сообщение отправлено</p>
             </div>
-        </div>
+        </form>
     </div>
     <footer>
         <h3 class="title title-footer">Pineapple Island</h3>
