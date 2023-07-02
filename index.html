@@ -137,11 +137,22 @@
         <h3 class="title">Stay In Touch</h3>
         <p class="discription">If you are interested in finding out more about The Discovery Village, leave a message</p>
         <div class="feedback">
-            <input type="text" id="Name" name="name" placeholder="Name" class="field">  
-            <input type="text" id="Phone" name="phone" placeholder="Phone No" class="field">  
-            <input type="text" id="Email" name="email" placeholder="Email" class="field">  
-            <span class="message">Message</span>
-            <input type="text" id="Message" name="firstname">  
+            <div class="form-group">
+                <input type="text" id="Name" class="field" required>
+                <label for="Name">Name</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="Phone" class="field" required>
+                <label for="Phone">Phone</label> 
+            </div> 
+            <div class="form-group">
+                <input type="text" id="Email" class="field" required>
+                <label for="Email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="Message"  class="Message" required>
+                <label for="Message">Message</label>
+            </div>  
             <button class="btn btn-feedback">Send</button>
         </div>
     </div>

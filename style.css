@@ -305,10 +305,33 @@ input {
     line-height: 19px;
     color: rgba(0, 0, 0, 0.6);
 }
-input:nth-last-child(2) {
-    margin-top: 5px;
+input.Message {
     border: 1px solid rgba(0, 0, 0, 0.35);
     min-height: 83px;
+}
+input:focus {
+    outline: rgba(0, 0, 0, 0.35) solid 2px
+}
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+  
+label {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+  
+input:focus ~ label,
+input:valid ~ label {
+    top: 7px;
+    font-size: 14px;
+    color: rgb(5, 5, 5);
+
 }
 .message {
     margin-top: 24px;
