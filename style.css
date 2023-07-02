@@ -315,8 +315,7 @@ input:focus {
 .form-group {
     position: relative;
     margin-bottom: 10px;
-}
-  
+} 
 label {
     position: absolute;
     top: 30px;
@@ -325,13 +324,11 @@ label {
     pointer-events: none;
     color: rgba(0, 0, 0, 0.6);
 }
-  
 input:focus ~ label,
 input:valid ~ label {
     top: 7px;
     font-size: 14px;
     color: rgb(5, 5, 5);
-
 }
 .message {
     margin-top: 24px;
@@ -357,6 +354,24 @@ input:valid ~ label {
     color: #0E204E;
     border: #0E204E 2px solid;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(27, 223, 86);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(10, 221, 80, 0.3);
+    z-index: 9999;
+  }
+  
+  .popup p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+  }
 /* foter */
 footer {
     width: 100vw;
