@@ -12,7 +12,6 @@
     <link rel="stylesheet" media="(max-width: 800px)" href="style-mobile.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="style-desktop.css">
     
-
     <title>Island</title>
 </head>
 <body>
@@ -24,7 +23,18 @@
             <span class="bar"></span>
         </div>
     </header>
-    <div class="header__nav">
+    <header id="Main-desktop">
+        <h1 class="title-header">Pineapple<br> Island</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list_item"><a class="nav__link" href="#About Us">About Us</a></li>
+                <li class="nav__list_item"><a class="nav__link" href="#What we do">What we do</a></li>
+                <li class="nav__list_item"><a class="nav__link" href="#Project">Project</a></li>
+            </ul>
+        </nav>
+        <button class="btn">Get in Touch</button>
+    </header>
+    <div class="header__nav" id="header-mobile">
         <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list_item"><a class="nav__link" href="#Main">Main</a></li>
@@ -38,7 +48,7 @@
     <section class="container">
         <h2 class="title-block">Pineapple Island:<br> GenZ and Millenial Abode</h2>
         <p class="discription-block">a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
-        <button class="btn">Get in Touch</button>
+        <button class="btn" id="btn-main-mobile">Get in Touch</button>
     </section>
     <div class="wraper" id="About">
         <h3 class="title">About<br>Pineapple Island</h3>
