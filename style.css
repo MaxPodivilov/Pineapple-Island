@@ -375,7 +375,7 @@ input:valid ~ label {
 label.massage {
     position: relative;
     padding: 0px;
-    top: -10px;
+    top: -4px;
     left: 0px;
     font-weight: 300;
     font-size: 16px;
