@@ -1,12 +1,17 @@
 @media (min-width: 801px) {
-    #Main {
+    #Main,
+    #header-mobile,
+    #btn-main-mobile,
+    #About, 
+    #outSide-mobile,
+    #title-outSide-mobile,
+    #icon-1,
+    #icon-2,
+    #icon-3,
+    #icon-4,
+    #icon-5,
+    #icon-6{
       display: none;
-    }
-    #header-mobile {
-        display: none;
-    }
-    #btn-main-mobile {
-        display: none;
     }
 }
 
@@ -91,7 +96,7 @@ header {
     border: #0E204E 2px solid;
 }
 .container {
-    width: 51%;
+    width: 786px;
     margin-top: 150px;
     margin-bottom: 350px;
     background: #0E204E;
@@ -122,4 +127,160 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
+    margin-top: 20px;
+}
+
+                                        /* ABout */
+.wraper {
+    display: flex;
+}
+.about-desktop {
+    margin-bottom: 250px;
+}
+.title {
+    width: 317px;
+    color: #0E204E;
+    font-size: 60px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    margin-right: 80px;
+    margin-left: 80px;
+    align-self: center;
+}
+.carousel {
+    position: relative;
+    display: flex;
+}
+.carousel-left {
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    background: url(assets/btn-left.svg) center/100% no-repeat;
+    border: 0px;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 2;
+    margin-right: -50px;
+    align-self: center;
+}
+.carousel-right {
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    background: url(assets/btn-right.svg) center/100% no-repeat;
+    border: 0px;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 2;
+    margin-left: -50px;
+    align-self: center;
+}
+.discription-about {
+    color: #FFF;
+    width: 433px;
+    font-size: 20px;
+    font-family: "Manrope";
+    font-weight: 400;
+    line-height: 160%;
+    padding: 134px 58px 134px 60px;
+    background: #0E204E;
+}
+                                /* Choose */
+.wraper-choose {
+    position: relative;
+    width: 100vw;
+    background: rgba(14, 32, 78, 1);
+    padding-top: 120px;
+    margin-left: -100px;
+    margin-bottom: 296px;
+}
+.title-choose {
+    width: 289px;
+    color: #FFF;
+    margin-left: 180px;
+    margin-right: 60px;
+}
+.discription {
+    width: 480px;
+    padding: 100px;
+    color: #0E204E;
+    font-size: 20px;
+    font-family: "Manrope";
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: -46px;
+    background: #FFF;
+    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.10);
+    z-index: 2;
+}
+.chose-photo {
+    display: block;
+    width: 709px;
+    height: 634px;
+    margin-bottom: -46px;
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.10);
+    z-index: 2;
+}
+.wraper-choose svg {
+    position: absolute;
+    width: 100vw;
+    left: 0px;
+    bottom: -2px;
+    right: 0px;
+}
+polygon {
+    
+}
+                                /* offers */
+.wraper-offers {
+    display: flex;
+    flex-direction: column;
+}
+.title-offers {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.offers-1-desktop {
+    position: relative;
+    width: 568px;
+    height: 582px;
+}
+.offers-1-desktop::before {
+    content: "";
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 208px;
+    height: 358px;
+    background: rgba(14, 32, 78, 1);
+    z-index: 5;
+}
+.offers-2-desktop {
+    width: 568px;
+    height: 582px;
+}
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 179px;
+    margin-left: 80px;
+    margin-top: 112px;
+}
+li svg {
+    fill:black;
+}
+.offers-element {
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+}
+.offers-icon {
+    margin-bottom: 45px;
+}
+.offers-discription {
+    color: #263238;
+    font-size: 18px;
+    font-family: "Manrope";
+    font-weight: 400;
 }

@@ -1,3 +1,13 @@
+@media (max-width: 801px) {
+    #offers-1-desktop {
+      display: none;
+    }
+    #offers-2-desktop {
+        display: none;
+    }
+    
+}
+
 * {
     box-sizing: border-box;
 }
