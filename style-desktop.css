@@ -10,7 +10,9 @@
     #icon-3,
     #icon-4,
     #icon-5,
-    #icon-6{
+    #icon-6,
+    #gallery-mobile,
+    #title-gallery-mobile{
       display: none;
     }
 }
@@ -284,3 +286,37 @@ li svg {
     font-family: "Manrope";
     font-weight: 400;
 }
+                                /* Gallery */
+.wraper-gallery {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 250px;
+}
+.discription-gallery {
+    min-width: 726px;
+    color: #263238;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+.gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.gallery-photo {
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-photo:hover {
+    transform: scale(1.5);
+  }

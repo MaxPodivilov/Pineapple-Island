@@ -1,11 +1,9 @@
 @media (max-width: 801px) {
-    #offers-1-desktop {
+    #offers-1-desktop,
+    #offers-2-desktop,
+    #title-gallery-desktop {
       display: none;
     }
-    #offers-2-desktop {
-        display: none;
-    }
-    
 }
 
 * {
