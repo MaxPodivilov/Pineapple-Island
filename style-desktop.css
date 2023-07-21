@@ -361,54 +361,50 @@ li svg {
 }
 .element-checkbox {
     color: #030033;
+    font-family: "Manrope";
     font-size: 20px;
-    font-weight: 400;
-    padding: 13px 115px 14px 24px;
+    font-weight: 600;
+    padding: 13px 0px 14px 24px;
     margin-bottom: 10px;
 }
 .element-checkbox:nth-child(2n+1) {
    background: rgba(14, 63, 51, 0.20);
 }
-.list-checkbox input[type="checkbox"] {
-    display: none;
+.list-checkbox {
+    width: 542px
+}
+  /* Общий стиль для чекбокса */
+input[type="checkbox"] {
+    display: none; /* Скрыть оригинальный чекбокс */
   }
   
-  .list-checkbox label {
+  /* Стилизация кастомного чекбокса */
+  .custom-checkbox {
     display: inline-block;
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
-  }
-  
-  .list-checkbox label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 20px;
     height: 20px;
     border: 2px solid #000;
-    border-radius: 4px;
-    transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+    cursor: pointer;
+    background: #0E204E;
+    margin-left: 80px;
   }
   
-  .list-checkbox label::after {
-    content: "\2713";
+  /* Стилизация галочки */
+  .custom-checkbox::after {
+    content: "";
     position: absolute;
-    top: 4px;
-    right: 4px;
-    width: 12px;
-    height: 12px;
-    color: #000;
-    opacity: 0;
-    transition: opacity 0.3s;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
   }
   
-  .list-checkbox input[type="checkbox"]:checked + label::before {
-    background-color: #000;
-    border-color: #000;
-  }
-  
-  .list-checkbox input[type="checkbox"]:checked + label::after {
-    opacity: 1;
+  /* Отображаем галочку при выборе чекбокса */
+  input[type="checkbox"]:checked + .custom-checkbox::after {
+    display: block;
   }
