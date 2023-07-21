@@ -90,6 +90,7 @@ header {
     font-family: "Manrope";
     font-weight: 400;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s, border 0.3s;
 }
 .btn:hover {
     background: #FFFFFF;
@@ -107,7 +108,7 @@ header {
     content: "";
     position: absolute;
     top: 168px;
-    right: 0px;
+    left: 552px;
     width: 1368px;
     height: 717px;
     background: url(assets/main-desktop.jpg) center / 100% no-repeat;
@@ -308,6 +309,7 @@ li svg {
 }
                                 /* Gallery */
 .wraper-gallery {
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -352,6 +354,17 @@ li svg {
     display: block;
     position: relative;
 }
+.features-photo::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: -200px;
+    top: 140px;
+    width: 200px;
+    height: 445px;
+    background: rgba(14, 32, 78, 1);
+    z-index: 5;
+}
 .title-features {
     color: #0E204E;
     font-family: "Playfair Display";
@@ -373,13 +386,10 @@ li svg {
 .list-checkbox {
     width: 542px
 }
-  /* Общий стиль для чекбокса */
 input[type="checkbox"] {
-    display: none; /* Скрыть оригинальный чекбокс */
-  }
-  
-  /* Стилизация кастомного чекбокса */
-  .custom-checkbox {
+    display: none;
+}
+.custom-checkbox {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -388,10 +398,8 @@ input[type="checkbox"] {
     cursor: pointer;
     background: #0E204E;
     margin-left: 80px;
-  }
-  
-  /* Стилизация галочки */
-  .custom-checkbox::after {
+}
+.custom-checkbox::after {
     content: "";
     position: absolute;
     left: 5px;
@@ -402,9 +410,59 @@ input[type="checkbox"] {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     display: none;
-  }
-  
-  /* Отображаем галочку при выборе чекбокса */
-  input[type="checkbox"]:checked + .custom-checkbox::after {
+}
+input[type="checkbox"]:checked + .custom-checkbox::after {
     display: block;
-  }
+}
+
+                                            /* Agent */
+.container-agent {
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 251px;
+}
+.wraper-agent {
+   align-self: center;
+   margin-left: 200px;
+}
+.title-agent {
+    max-width: 319px;
+    color: #0E204E;
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0px;
+}
+.discription-agent {
+    max-width: 417px;
+    color: #263238;
+    font-family: "Manrope";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px;
+    margin-top: 30px;
+}
+.btn-agent {
+    margin-top: 48px;
+    width: 239px;
+    height: 62px;
+}
+.photo-agent {
+    position: relative;
+    margin-right: 200px;
+}
+.photo-agent::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -200px;
+    top: 140px;
+    width: 200px;
+    height: 445px;
+    background: rgba(14, 32, 78, 1);
+    z-index: 5;
+}
