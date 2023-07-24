@@ -23,6 +23,7 @@ html {
     font-size: 16px;
 }
 body {
+    max-width: 1920px;
     padding: 50px 100px 0px 100px;
     margin: 0px;
     padding-bottom: 0px;
@@ -248,7 +249,7 @@ polygon {
     width: 568px;
     height: 582px;
     z-index: 1;
-    margin-right: 270px;
+    margin-right: 200px;
 }
 .photo-left {
     position: relative;
@@ -286,6 +287,7 @@ polygon {
 .offers-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     column-gap: 100px;
     margin-left: 80px;
     margin-top: 112px;
@@ -386,9 +388,6 @@ li svg {
 .list-checkbox {
     width: 542px
 }
-input[type="checkbox"] {
-    display: none;
-}
 .custom-checkbox {
     display: inline-block;
     width: 20px;
@@ -397,7 +396,7 @@ input[type="checkbox"] {
     position: relative;
     cursor: pointer;
     background: #0E204E;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .custom-checkbox::after {
     content: "";
@@ -409,6 +408,9 @@ input[type="checkbox"] {
     border: solid #fff;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+    display: none;
+}
+input[type="checkbox"] {
     display: none;
 }
 input[type="checkbox"]:checked + .custom-checkbox::after {
@@ -466,3 +468,138 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     background: rgba(14, 32, 78, 1);
     z-index: 5;
 }
+                                        /* Stay In Touch */
+.wraper-feedback {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-feedback {
+    width: 100%;
+    color: #0E204E;
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+.discription-feedback {
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 30px;
+    padding: 0px;
+    box-shadow: none;
+}
+.feedback {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.form-group {
+    width: 100%;
+    max-width: 909px;
+    padding:5px 30px 5px 30px;
+}
+input {
+    width:100%;
+    padding:5px 0px 5px 0px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0,);
+}
+input.Message {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    min-height: 83px;
+}
+input:focus {
+    outline: none;
+}
+.form-group {
+    position: relative;
+} 
+.label-feedback {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: 7px;
+    font-size: 14px;
+    color: rgb(5, 5, 5);
+}
+.massage-area {
+    width: 47%;
+    margin: 35px 30px 0px 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+label.massage {
+    position: relative;
+    padding: 0px;
+    top: -4px;
+    left: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    color: rgba(0, 0, 0,);
+}
+.btn-feedback {
+    width: 141px;
+    height: 48px;
+    background: #0E204E;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    align-self: center;
+    margin-top: 56px;
+    padding-bottom: 5px;
+}
+.btn-feedback:hover {
+    background: #FFFFFF;
+    color: #0E204E;
+    border: #0E204E 2px solid;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(27, 223, 86);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(10, 221, 80, 0.3);
+    z-index: 9999;
+}
+.popup p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+                                    /* footer */
+.

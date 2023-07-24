@@ -256,24 +256,24 @@
             <img src="assets/agent.jpg" alt="фото агента">
         </div>
     </section>
-    <div class="wraper">
-        <h3 class="title">Stay In Touch</h3>
-        <p class="discription">If you are interested in finding out more about The Discovery Village, leave a message</p>
+    <div class="wraper wraper-feedback">
+        <h3 class="title title-feedback">Stay In Touch</h3>
+        <p class="discription discription-feedback">If you are interested in finding out more about The Discovery Village, leave a message</p>
         <form class="feedback" onsubmit="return validateForm(event)">
             <div class="form-group">
                 <input type="text" id="Name" class="field" required>
-                <label for="Name">Name</label>
+                <label class="label-feedback" for="Name">Name</label>
             </div>
             <div class="form-group">
                 <input type="text" id="Phone" class="field" required>
-                <label for="Phone">Phone</label> 
+                <label class="label-feedback" for="Phone">Phone</label> 
             </div> 
             <div class="form-group">
                 <input type="text" id="Email" class="field" required>
-                <label for="Email">Email</label>
+                <label class="label-feedback" for="Email">Email</label>
             </div>
             <div class="massage-area">
-                <label for="story" class="massage">Massage</label>
+                <label class="label-feedback" for="story" class="massage">Massage</label>
                 <textarea id="story" name="story" rows="5" cols="40"></textarea>
             </div>
             <button class="btn btn-feedback" id="openPopupButton" type="submit">Send</button>
@@ -282,9 +282,20 @@
             </div>
         </form>
     </div>
-    <footer>
+    <footer class="footer-mobile">
         <h3 class="title title-footer">Pineapple Island</h3>
         <p class="discription discription-footer">Copyright 2021 Glowdsgn All Rights Reserved</p>
+    </footer>
+    <footer class="footer-desktop">
+        <div>
+            <h3 class="title-footer-desktop"></h3>
+            <p class="discription-footer-desktop"></p>
+        </div>
+        <div>
+            <h4></h4>
+            <p></p>
+            
+        </div>
     </footer>
     <script src="js/menu-burger.js"></script>
     <script src="js/gallery.js"></script>
