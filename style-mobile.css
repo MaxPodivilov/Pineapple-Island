@@ -428,7 +428,7 @@ textarea {
     margin: 0;
   }
 /* foter */
-footer {
+.footer-mobile {
     width: 100vw;
     margin-top: 50px;
     margin-left: -20px;
