@@ -16,7 +16,8 @@
     #wraper-features-desktop,
     #photo-agent-desktop,
     #footer-background,
-    #footer-desktop {
+    #footer-desktop,
+    #title-offers-desktop {
       display: none;
     }
 }
@@ -339,7 +340,6 @@ header {
     display: flex;
     justify-content: center;
     min-width: 103px;
-    min-height: 40px;
 }
 .wraper-agent {
     display: flex;
