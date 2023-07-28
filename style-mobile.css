@@ -1,7 +1,22 @@
 @media (max-width: 801px) {
     #offers-1-desktop,
     #offers-2-desktop,
-    #title-gallery-desktop {
+    #title-gallery-desktop,
+    #Main-desktop,
+    #About-desktop,
+    #choose-backround,
+    #icon-1-desktop,
+    #icon-2-desktop,
+    #icon-3-desktop,
+    #icon-4-desktop,
+    #icon-5-desktop,
+    #icon-6-desktop,
+    #photo-left_desktop,
+    #gallery-desktop,
+    #wraper-features-desktop,
+    #photo-agent-desktop,
+    #footer-background,
+    #footer-desktop {
       display: none;
     }
 }
@@ -13,6 +28,7 @@ html {
     font-size: 16px;
 }
 body {
+    max-width: 400px;
     padding: 20px 20px 20px 20px;
     margin: 0px;
     padding-bottom: 0px;
@@ -66,7 +82,7 @@ header {
     width: 30px;
     height: 30px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     overflow: hidden;
     cursor: pointer;
     align-self: center;
@@ -118,7 +134,7 @@ header {
     text-align: center;
     font-size: 24px;
     padding-top: 30px;
-    z-index: 1;
+    z-index: 2;
   }
   
   .nav.active {
@@ -206,6 +222,7 @@ header {
     align-items: center;
     background: url(assets/streat-mobile.png) center/cover no-repeat;
     min-height: 392px;
+    margin-top: 24px;
 }
 .carousel::before {
     content: "";
@@ -281,9 +298,6 @@ header {
 .offers-element {
     text-align: center;
 }
-.offers-icon {
-
-}
 .offers-discription {
     font-family: 'Poppins';
     font-size: 12px;
@@ -314,6 +328,7 @@ header {
 
 .container-agent {
     width: 100vw;
+    max-width: 420px;
     background: #0E204E;
     min-height: 0px;
     padding: 40px;
@@ -321,10 +336,16 @@ header {
     margin-left: -20px;
 }
 .btn-agent {
+    display: flex;
+    justify-content: center;
     min-width: 103px;
     min-height: 40px;
 }
-
+.wraper-agent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
                             /* Feedback */
 
 .feedback {
@@ -377,6 +398,7 @@ input:valid ~ label {
     color: rgb(5, 5, 5);
 }
 .massage-area {
+    position: relative;
     margin: 35px 30px 0px 30px;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -388,6 +410,12 @@ label.massage {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+}
+.label-feedback:nth-child(4) {
+    position: relative;
+    padding: 0px;
+    top: -30px;
+    left: 0px;
 }
 textarea {
     width: 100%;
@@ -426,7 +454,7 @@ textarea {
     font-size: 18px;
     text-align: center;
     margin: 0;
-  }
+}
 /* foter */
 .footer-mobile {
     width: 100vw;

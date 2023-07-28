@@ -25,14 +25,14 @@
     </header>
     <header id="Main-desktop">
         <h1 class="title-header">Pineapple<br> Island</h1>
-        <nav class="nav">
-            <ul class="nav__list">
+        <nav class="nav-desktop">
+            <ul class="nav_list">
                 <li class="nav__list_item"><a class="nav__link" href="#About Us">About Us</a></li>
                 <li class="nav__list_item"><a class="nav__link" href="#What we do">What we do</a></li>
                 <li class="nav__list_item"><a class="nav__link" href="#Project">Project</a></li>
             </ul>
         </nav>
-        <button class="btn">Get in Touch</button>
+        <button class="btn" id="btn-desktop">Get in Touch</button>
     </header>
     <div class="header__nav" id="header-mobile">
         <nav class="nav">
@@ -75,7 +75,7 @@
         <h3 class="title title-choose">Why Choose<br> Pineapple Island</h3>
         <p class="discription">Pineapple Island is the most sought-after  community in Ibadan that values and puts the needs of their clients first. It is a territory with loft complexes that creates a country life and homely feeling that is integrated with industrial development. A perfect, professional built  abode that gives you the true taste of beauty and happiness.</p>
         <img src="assets/desktop-choose.jpg" alt="" class="chose-photo">
-        <svg width="100vh" height="200">
+        <svg width="100vh" height="200" id="choose-backround">
             <polygon points="1080,0 2000,200 0,200" fill="white" />
         </svg>
     </div>
@@ -84,7 +84,7 @@
         <h3 class="title" id="title-outSide-mobile">Pineapple Island Offers</h3>
         <img src="assets/outSide-mobile.png" alt="" class="offers-photo" id="outSide-mobile">
         <ul class="offers-list">
-            <div class="photo-left">
+            <div class="photo-left" id="photo-left_desktop">
                  <img src="assets/offers-1-desktop.jpg" alt="" class="offers-1-desktop" id="offers-1-desktop">
             </div>
             <li class="offers-element">
@@ -122,7 +122,7 @@
             </div>
         </ul>
     </div>
-    <div class="wraper wraper-gallery" id="Homes">
+    <div class="wraper wraper-gallery" id="homes">
         <h3 class="title" id="title-gallery-mobile">Available Homes</h3>
         <h3 class="title" id="title-gallery-desktop">Galleries</h3>
         <p class="discription discription-gallery">a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
@@ -196,7 +196,7 @@
             </li>
         </ul>
     </div>
-    <div class="wraper-features">
+    <div class="wraper-features" id="wraper-features-desktop">
         <div class="features-photo">
             <img src="assets/features-photo.jpg" alt="">
         </div>
@@ -246,13 +246,13 @@
             </ul>
         </div>
     </div>
-    <section class="container container-agent">
+    <section class="container-agent">
         <div class="wraper-agent">
             <h3 class="title-block title-agent">Become an Agent</h3>
             <p class="discription-block discription-agent">A community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
             <button class="btn btn-agent">Join Now</button>
         </div>
-        <div class="photo-agent">
+        <div class="photo-agent" id="photo-agent-desktop">
             <img src="assets/agent.jpg" alt="фото агента">
         </div>
     </section>
@@ -273,7 +273,7 @@
                 <label class="label-feedback" for="Email">Email</label>
             </div>
             <div class="massage-area">
-                <label class="label-feedback" for="story" class="massage">Massage</label>
+                <label for="story" class="massage">Massage</label>
                 <textarea id="story" name="story" rows="5" cols="40"></textarea>
             </div>
             <button class="btn btn-feedback" id="openPopupButton" type="submit">Send</button>
@@ -286,7 +286,7 @@
         <h3 class="title title-footer">Pineapple Island</h3>
         <p class="discription discription-footer">Copyright 2021 Glowdsgn All Rights Reserved</p>
     </footer>
-    <svg xmlns="http://www.w3.org/2000/svg" class="footer-background" width="1920" height="400" viewBox="0 0 1920 400" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="footer-background" id="footer-background" width="1920" height="400" viewBox="0 0 1920 400" fill="none">
         <g filter="url(#filter0_d_2_45)">
         <path d="M1920 400L0 400V107.364L224 4L1920 107.364L1920 400Z" fill="#0E204E"/>
         </g>
@@ -302,7 +302,7 @@
         </filter>
         </defs>
         </svg>
-    <footer class="footer-desktop">
+    <footer class="footer-desktop" id="footer-desktop">
         <div class="footer-block">
             <h3 class="title-footer-desktop">Banana <br>Island</h3>
             <p class="discription-footer-desktop">a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>

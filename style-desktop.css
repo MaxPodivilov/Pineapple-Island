@@ -69,7 +69,7 @@ header {
     font-family: "Playfair Display";
     font-weight: 700;
 }
-.nav__list {
+.nav_list {
     display: flex;
     gap:88px;
     color: #232323;
@@ -77,10 +77,10 @@ header {
     font-family: "Manrope";
     font-weight: 400; 
 }
-.nav__list_item:hover {
+.nav_list_item:hover {
     scale: 1.1;
 }
-.nav__link:hover {
+.nav_link:hover {
     text-decoration: underline;
 }
 .btn {
