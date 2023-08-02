@@ -30,6 +30,7 @@ body {
     margin: 0px;
     padding-bottom: 0px;
     overflow-x:hidden;
+    margin: 0px auto;
 }
 body.active {
     overflow-y: hidden;
@@ -194,6 +195,7 @@ header {
 .wraper-choose {
     position: relative;
     width: 100vw;
+    max-width: 1920px;
     background: rgba(14, 32, 78, 1);
     padding-top: 120px;
     margin-left: -100px;
